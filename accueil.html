@@ -6,9 +6,52 @@
     <title>Accueil</title>
     <link rel="stylesheet" href="assets/bootstrap.min.css">
 </head>
-<body>
- 
 
-    <script src="assets/bootstrap.min.js"></script>
+<body>
+    <!-- HEADER -->
+    <!-- CRÉATION D'UN MENU DE NAVIGATION RESPONSIVE -->
+    <header class="border">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="accueil.html">Accueil</a>
+
+              <!-- INSERTION D'UNE ICÔNE BURGER -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- CRÉATION DE DEUX SOUS-MENUS "A PROPOS" ET "NOUS AIDER"-->
+              <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      A propos
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#histoire">Notre histoire</a></li>
+                      <li><a class="dropdown-item" href="#partenaires">Nos partenaires</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="nos_chats.html" class="nav-link">Adoptez-les</a></li>
+                  <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Nous aider
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="nous_aider.html">Adhérer à l'association</a></li>
+                      <li><a class="dropdown-item" href="nous_aider.html">Devenir bénévole</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="evenements.html" class="nav-link">Évènements</a></li>
+                  <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+
+    <script src="assets/bootstrap.bundle.min.js"></script>
 </body>
 </html>
