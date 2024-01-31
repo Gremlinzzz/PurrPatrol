@@ -4,11 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A l'adoption</title>
+    <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="assets/bootstrap.min.css">
 </head>
 <body>
  
+    <header class="px-3 border">
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="accueil.html">Accueil</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="menu">
 
-    <script src="assets/bootstrap.min.js"></script>
+                            <ul class="navbar-nav">
+                                <li><a href="nos_chats.html" class="nav-link">Adoptez-les</a></li>
+
+                                <!-- SOUS-MENU -->
+                                <li class="nav-item dropdown">
+                                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Nous aider</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="nous_aider.html">Adhérer à l'association</a></li>
+                                            <li><a class="dropdown-item" href="nous_aider.html">Devenir bénévole</a></li>
+                                        </ul>
+                                </li>
+
+                                <li><a href="evenements.html" class="nav-link">Évènements</a></li>
+
+                                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                            </ul>
+                        </div>
+        </nav>
+    </header> 
+
+    <main>
+        <!-- CRÉATION D'UNE ALERTE -->
+        <div class="container py-4">
+            <div class="alert alert-primary alert-dismissible text-center"><strong>IMPORTANT</strong> <hr>Beaucoup d’animaux sont abandonnés à la suite d'un déménagement, d'un divorce, d'une expulsion, d'un décès ou retirés suite à une procédure juridique pour mauvais traitement ou acte de cruauté. Afin d'éviter cela, il est conseillé de bien mûrir votre réflexion avant tout engagement. Pour adopter un chat ou un chaton dans notre refuge, nous vous prions de prendre connaissance au préalable des <a href="modalites.html" class="alert-link"> modalités d’adoption</a>.
+                <button class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+
+        <!-- DÉFINITION DE CARTES POUR CHAQUE PENSIONNAIRE -->
+        <div class="container border">
+            <div class="row mx-auto d-flex justify-content-center">
+
+                <!-- PENSIONNAIRE 1 : OLIVER -->
+                <div class="col-12 col-lg-4 p-3 align-self-center">
+                    <div class="card">
+                        <img src="Images2/pensionnaire1.jpeg" class="card-img-top" alt="Oliver">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Oliver</h5>
+                                    <p class="card-text">Ce beau chat junior au pelage gris a été trappé avec ses deux sœurs, son frère et sa maman, aux abords de la Poste de Corbeil suite à un signalement. Très craintifs ils ont d'abord été placés en FA provisoire et ont rejoint le refuge afin de leur permettre de s'habituer davantage à l'humain. De sa fratrie, seul Oliver est encore à l’adoption. Nous recherchons une douce famille, patiente et bienveillante, qui a déjà de l'expérience, sans jeunes enfants, dans un environnement calme et zen.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Race : Européen</li>
+                                <li class="list-group-item">Naissance : 01/09/2022</li>
+                                <li class="list-group-item">Sexe : Mâle</li>
+                                <li class="list-group-item">Tatouage : 0001TH</li>
+                            </ul>
+                            <div class="card-body text-center">
+                                <small class="card-text-secondary">
+                                    <a href="modalites.html" class="card-link">Modalités d'adoption</a>
+                                </small>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- PENSIONNAIRE 2 : PEANUT -->
+                <div class="col-12 col-lg-4 p-3">
+                    <div class="card">
+                        <img src="Images2/pensionnaire3.jpeg" class="card-img-top" alt="Peanut">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Peanut</h5>
+                                    <p class="card-text">Ce magnifique jeune chat vient d'un site insalubre et dangereux de Vitry-sur-Seine où survivaient une trentaine de chats dans des conditions horribles au milieu d'un squat de sans abris qui les maltraitaient (chatons pendus dans les arbres..). Le site était envahi de rats, les chats livrés à eux-mêmes et grâce à une alerte faite à plusieurs associations nous pu en sauver plusieurs et les placer en Famille d'Accueil provisoire pour prendre soin d'eux et les sortir de cet enfer. Peanut est un chat timide au premier abord et grâce aux douces attentions et la patience de sa Famille d'Accueil, il se livre, une fois en confiance et apprécie les séances de ronrons, patoune et ira jusqu'à vous montrer son petit bidou pour se faire davantage dorloter. Compte tenu de son histoire, nous recherchons une famille bienveillante, au grand cœur dans un environnement zen, qui lui laissera le temps de s'approprier son nouveau territoire tout en douceur, sans le contraindre. Une présence raisonnable est souhaitée, chats non dominants ok, ados calmes et respectueux de son statut ok.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Race : Européen</li>
+                                <li class="list-group-item">Naissance : 15/05/2023</li>
+                                <li class="list-group-item">Sexe : Mâle</li>
+                                <li class="list-group-item">Tatouage : 0003TH</li>
+                            </ul>
+                            <div class="card-body text-center">
+                                <small class="card-text-secondary">
+                                    <a href="modalites.html" class="card-link">Modalités d'adoption</a>
+                                </small>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- PENSIONNAIRE 3 : NIKKI -->
+                <div class="col-12 col-lg-4 p-3 align-self-center">
+                    <div class="card">
+                        <img src="Images2/pensionnaire2.jpeg" class="card-img-top" alt="Nikki">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Nikki</h5>
+                                    <p class="card-text">Cette belle tigrée a été trappée avec toute une colonie de chats à Chilly Mazarin. Le site était trop dangereux pour le relâcher car il y a eu plusieurs cas d’empoisonnements. C'est un chat-chien qui vous suit partout, elle s'installe sur le lit de sa FA pour y dormir la nuit, adore jouer avec tous les accessoires ludiques mis à sa disposition, fais des roulés boulés et est très curieuse de nature. Elle patoune et adore se mettre dans les niches et couffins moelleux. Nous recherchons pour ce petit être un foyer chaleureux et définitif auprès d'une famille expérimentée, jeunes adultes calmes et respectueux de son statut ok, appartement avec balcon sécurisé.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Race : Européen</li>
+                                <li class="list-group-item">Naissance : 01/06/2020</li>
+                                <li class="list-group-item">Sexe : Femelle</li>
+                                <li class="list-group-item">Tatouage : 0002TH</li>
+                            </ul>
+                            <div class="card-body text-center">
+                                <small class="card-text-secondary">
+                                    <a href="modalites.html" class="card-link">Modalités d'adoption</a>
+                                </small>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+                                    <!-- FOOTER -->
+    <footer class="border">
+        <div class="container border d-flex justify-content-center">
+            <p class="text"><small class="text-body-secondary">Tous droits réservés © | 2024 </small></p>
+        </div>
+    </footer>
+
+    <script src="assets/bootstrap.bundle.min.js"></script>
 </body>
 </html>
