@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="assets/bootstrap.min.css">
 </head>
-<body>
+<body class="bg-light">
  
-    <header class="px-3 border">
-        <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand" href="accueil.html">Accueil</a>
+    <header class="px-3">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand btn btn-primary btn-sm" href="accueil.html" type="button">Accueil</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span></button>
                         <div class="collapse navbar-collapse" id="menu">
@@ -39,20 +39,17 @@
     </header> 
 
     <main>
-                            <!-- CRÉATION D'UNE ALERTE -->
-            <div class="alert alert-primary alert-dismissible text-center"><strong>IMPORTANT</strong> <hr>Beaucoup d’animaux sont abandonnés à la suite d'un déménagement, d'un divorce, d'une expulsion, d'un décès ou retirés suite à une procédure juridique pour mauvais traitement ou acte de cruauté. Afin d'éviter cela, il est conseillé de bien mûrir votre réflexion avant tout engagement. Pour adopter un chat ou un chaton dans notre refuge, nous vous prions de prendre connaissance au préalable des <a href="modalites.html" class="alert-link"> modalités d’adoption</a>.
-                <button class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-
-
-
                                     <!-- LOGO -->
-        <div class="container border d-flex justify-content-center">
-            <img class="img" style="width: 180px;" src="Images2/logo.png" alt="Logo PurrPatrol" id="logoAdoption">
+        <div class="container d-flex justify-content-center">
+            <img class="img p-4" style="width: 180px;" src="Images2/logo.png" alt="Logo PurrPatrol" id="logoAdoption">
         </div>
 
         <!-- DÉFINITION DE CARTES POUR CHAQUE PENSIONNAIRE -->
-        <div class="container border">
+        <div class="container mb-4">
+                                        <!-- CRÉATION D'UNE ALERTE -->
+                                        <div class="alert alert-danger alert-dismissible text-center text-danger"><strong>ATTENTION</strong> <hr>Beaucoup d’animaux sont abandonnés à la suite d'un déménagement, d'un divorce, d'une expulsion, d'un décès ou retirés suite à une procédure juridique pour mauvais traitement ou acte de cruauté. Afin d'éviter cela, il est conseillé de bien mûrir votre réflexion avant tout engagement. Pour adopter un chat ou un chaton dans notre refuge, nous vous prions de prendre connaissance au préalable des <a href="modalites.html" class="alert-link"> modalités d’adoption</a>.
+                                            <button class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        </div>
             <div class="row mx-auto d-flex justify-content-center">
 
                 <!-- PENSIONNAIRE 1 : OLIVER -->
@@ -60,8 +57,8 @@
                     <div class="card">
                         <img src="Images2/pensionnaire1.jpeg" class="card-img-top" alt="Oliver">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Oliver</h5>
-                                    <p class="card-text">Ce beau chat junior au pelage gris a été trappé avec ses deux sœurs, son frère et sa maman, aux abords de la Poste de Corbeil suite à un signalement. Très craintifs ils ont d'abord été placés en FA provisoire et ont rejoint le refuge afin de leur permettre de s'habituer davantage à l'humain. De sa fratrie, seul Oliver est encore à l’adoption. Nous recherchons une douce famille, patiente et bienveillante, qui a déjà de l'expérience, sans jeunes enfants, dans un environnement calme et zen.</p>
+                                <h2 class="card-title text-center">Oliver</h2>
+                                    <p class="card-text text-body-secondary">Ce beau chat junior au pelage gris a été trappé avec ses deux sœurs, son frère et sa maman, aux abords de la Poste de Corbeil suite à un signalement. Très craintifs ils ont d'abord été placés en FA provisoire et ont rejoint le refuge afin de leur permettre de s'habituer davantage à l'humain. De sa fratrie, seul Oliver est encore à l’adoption. Nous recherchons une douce famille, patiente et bienveillante, qui a déjà de l'expérience, sans jeunes enfants, dans un environnement calme et zen.</p>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">Race : Européen</li>
@@ -82,8 +79,8 @@
                     <div class="card">
                         <img src="Images2/pensionnaire3.jpeg" class="card-img-top" alt="Peanut">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Peanut</h5>
-                                    <p class="card-text">Ce magnifique jeune chat vient d'un site insalubre et dangereux de Vitry-sur-Seine où survivaient une trentaine de chats dans des conditions horribles au milieu d'un squat de sans abris qui les maltraitaient (chatons pendus dans les arbres..). Le site était envahi de rats, les chats livrés à eux-mêmes et grâce à une alerte faite à plusieurs associations nous pu en sauver plusieurs et les placer en Famille d'Accueil provisoire pour prendre soin d'eux et les sortir de cet enfer. Peanut est un chat timide au premier abord et grâce aux douces attentions et la patience de sa Famille d'Accueil, il se livre, une fois en confiance et apprécie les séances de ronrons, patoune et ira jusqu'à vous montrer son petit bidou pour se faire davantage dorloter. Compte tenu de son histoire, nous recherchons une famille bienveillante, au grand cœur dans un environnement zen, qui lui laissera le temps de s'approprier son nouveau territoire tout en douceur, sans le contraindre. Une présence raisonnable est souhaitée, chats non dominants ok, ados calmes et respectueux de son statut ok.</p>
+                                <h2 class="card-title text-center">Peanut</h2>
+                                    <p class="card-text text-body-secondary">Ce magnifique jeune chat vient d'un site insalubre et dangereux de Vitry-sur-Seine où survivaient une trentaine de chats dans des conditions horribles au milieu d'un squat de sans abris qui les maltraitaient (chatons pendus dans les arbres..). Le site était envahi de rats, les chats livrés à eux-mêmes et grâce à une alerte faite à plusieurs associations nous pu en sauver plusieurs et les placer en Famille d'Accueil provisoire pour prendre soin d'eux et les sortir de cet enfer. Peanut est un chat timide au premier abord et grâce aux douces attentions et la patience de sa Famille d'Accueil, il se livre, une fois en confiance et apprécie les séances de ronrons, patoune et ira jusqu'à vous montrer son petit bidou pour se faire davantage dorloter. Compte tenu de son histoire, nous recherchons une famille bienveillante, au grand cœur dans un environnement zen, qui lui laissera le temps de s'approprier son nouveau territoire tout en douceur, sans le contraindre. Une présence raisonnable est souhaitée, chats non dominants ok, ados calmes et respectueux de son statut ok.</p>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">Race : Européen</li>
@@ -104,8 +101,8 @@
                     <div class="card">
                         <img src="Images2/pensionnaire2.jpeg" class="card-img-top" alt="Nikki">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Nikki</h5>
-                                    <p class="card-text">Cette belle tigrée a été trappée avec toute une colonie de chats à Chilly Mazarin. Le site était trop dangereux pour le relâcher car il y a eu plusieurs cas d’empoisonnements. C'est un chat-chien qui vous suit partout, elle s'installe sur le lit de sa FA pour y dormir la nuit, adore jouer avec tous les accessoires ludiques mis à sa disposition, fais des roulés boulés et est très curieuse de nature. Elle patoune et adore se mettre dans les niches et couffins moelleux. Nous recherchons pour ce petit être un foyer chaleureux et définitif auprès d'une famille expérimentée, jeunes adultes calmes et respectueux de son statut ok, appartement avec balcon sécurisé.</p>
+                                <h2 class="card-title text-center">Nikki</h2>
+                                    <p class="card-text text-body-secondary">Cette belle tigrée a été trappée avec toute une colonie de chats à Chilly Mazarin. Le site était trop dangereux pour le relâcher car il y a eu plusieurs cas d’empoisonnements. C'est un chat-chien qui vous suit partout, elle s'installe sur le lit de sa FA pour y dormir la nuit, adore jouer avec tous les accessoires ludiques mis à sa disposition, fais des roulés boulés et est très curieuse de nature. Elle patoune et adore se mettre dans les niches et couffins moelleux. Nous recherchons pour ce petit être un foyer chaleureux et définitif auprès d'une famille expérimentée, jeunes adultes calmes et respectueux de son statut ok, appartement avec balcon sécurisé.</p>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">Race : Européen</li>
@@ -124,14 +121,12 @@
         </div>
     </main>
 
-    <aside>
-        <hr>
+    <aside class="bg-warning">
                                         <!-- INSCRIPTION NEWSLETTER -->
-
-        <div class="container mt-4">
+       <div class="container pt-3">
             <div class="row justify-content-between align-items-center">
-                <div class="col-lg-5 mb-3">
-                    <div class="border text-center">
+                <div class="col-lg-5">
+                    <div class="text-center text-dark">
                         <h5>Et si on gardait contact ?</h5>
                             <label for="newsletter" class="form-label-sm">Inscription à notre newsletter :</label>
                             <input type="email" class="form-control form-control-sm" id="newsletter" placeholder="Votre adresse mail">
@@ -140,8 +135,8 @@
                 </div>
                                 
                                       <!-- RÉSEAUX SOCIAUX -->
-                <div class="col col-lg-3">
-                    <div class="border text-center">
+                <div class="col col-lg-3 mb-2">
+                    <div class="text-center text-dark">
                         <p class="lead">Nous suivre sur les réseaux :</p>
                                         <!-- INSTAGRAM -->
                             <a href="#" target="_blank"><img class="img" style="width: 30px;" src="Images2/insta_logo.png" alt="Logo Instagram"></a>
@@ -158,9 +153,9 @@
     </aside>
 
     <!-- FOOTER -->
-    <footer class="border">
-        <div class="container border d-flex justify-content-center p-4">
-            <small class="text-body-secondary text-center"><strong><a href="#logoAccueil">Haut de page</a></strong><br>
+    <footer class="bg-dark">
+        <div class="container d-flex justify-content-center p-4">
+            <small class="text-center text-primary"><strong><a href="#logoAccueil">Haut de page</a></strong><br>
             Crédit du contenu : <a href="https://www.refuge-asclaf.fr/" target="_blank" class="link-underline link-underline-opacity-0 link-underline-oopacity-75-hower">ASCLAF</a> | Tous droits réservés © | 2024</small>
         </div>
     </footer>

@@ -6,11 +6,11 @@
     <title>Nous aider</title>
     <link rel="stylesheet" href="assets/bootstrap.min.css">
 </head>
-<body>
+<body class="bg-light">
  
-    <header class="px-3 border">
-        <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand" href="accueil.html">Accueil</a>
+    <header class="px-3">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand btn btn-primary btn-sm" href="accueil.html" type="button">Accueil</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span></button>
                         <div class="collapse navbar-collapse" id="menu">
@@ -39,22 +39,19 @@
 
     <main>
                                                 <!-- LOGO -->
-        <div class="container border d-flex justify-content-center mb-4">
-            <img class="img" style="width: 180px;" src="Images2/logo.png" alt="Logo PurrPatrol" id="logoHelp">
+        <div class="container d-flex justify-content-center">
+            <img class="img p-4" style="width: 180px;" src="Images2/logo.png" alt="Logo PurrPatrol" id="logoHelp">
         </div>
 
-        <div class="container border mx-auto d-flex flex-wrap justify-content-center align-items-center">
-            <img class="card-img-top" style="width: 105px;" src="Images2/logo_adhesion.png" alt="Logo dons"  id="adhesion">
-                <div class="row row-cols-lg-2">
-                    <div class="card col"> 
-                        <div class="card-body">
-                            <h3 class="card-title text-center pb-3">Pourquoi adhérer ?</h3>
-                                <p class="card-text">C'est également grâce aux cotisations de nos membres que l'on peut mener à bien notre action. En adhérant, vous nous permettez d'avoir plus de poids pour mener notre combat. L’adhésion à notre association est de 25€. Celle-ci est valable un an et vous donne le droit de participer à l’Assemblée Générale annuelle où vous pouvez décider sur les projets de notre refuge et sur nos objectifs pour l’avenir. Vous pouvez ainsi vous engager pour la cause féline et aider à promouvoir l'importance de la protection animale. Faire découvrir notre refuge et nos activités accroît considérablement les possibilités d’action à nos côtés. Nous vous remercions d’avance de partager notre site avec vos amis !</p>
-                        </div>
+        <div class="container mx-auto d-flex flex-wrap justify-content-center align-items-center mt-4">
+                <div class="row row-cols-lg-2 gap-4">
+                    <div class="col"> 
+                            <h2 class="text-center fw-bold pb-3">Pourquoi adhérer ?</h2>
+                                <p class="text-center">C'est également grâce aux cotisations de nos membres que l'on peut mener à bien notre action. En adhérant, vous nous permettez d'avoir plus de poids pour mener notre combat. L’adhésion à notre association est de 25€. Celle-ci est valable un an et vous donne le droit de participer à l’Assemblée Générale annuelle où vous pouvez décider sur les projets de notre refuge et sur nos objectifs pour l’avenir. Vous pouvez ainsi vous engager pour la cause féline et aider à promouvoir l'importance de la protection animale. Faire découvrir notre refuge et nos activités accroît considérablement les possibilités d’action à nos côtés. Nous vous remercions d’avance de partager notre site avec vos amis !</p>
                     </div>
 
                             <!-- CRÉATION DU FORMULAIRE D'ADHÉSION -->
-                    <form class="row p-3 border">
+                    <form class="row p-3 bg-secondary rounded">
                         <div class="col-6">
                             <label for="name">Nom :</label>
                             <input type="name" class="form-control" id="name" placeholder="Nom" required>
@@ -94,82 +91,78 @@
                         </div>
                     </form>
                 </div>
+                <hr>
         </div>
 
-        <div class="container border mt-4 mx-auto d-flex flex-wrap justify-content-center align-items-center">
-            <img class="card-img-top" style="width: 90px;" src="Images2/logo_join.png" alt="Logo coeur main" id="benevolat">
-                <div class="row row-cols">
-                    <div class="card col"> 
-                        <div class="card-body">
-                            <h3 class="card-title text-center">Rejoignez-nous !</h3>
-                                <p class="card-text">Notre refuge fonctionne exclusivement sur le principe du bénévolat, ressource essentielle pour mener à bien notre mission. Vous souhaitez vous investir à nos côtés et avez une passion particulière pour les chats ?<br><br>
+        <div class="container mt-4 mx-auto d-flex flex-wrap justify-content-center align-items-center">
+            <hr>
+                <div class="row row-cols-lg-2 gap-4">
+                         <!-- CRÉATION DU FORMULAIRE POUR DEVENIR BÉNÉVOLE -->
+                         <form class="row p-3 mb-5 bg-secondary rounded order-sm-2 order-md-1">
+                            <div class="col-12 d-flex justify-content-center">
+                                <img class="img" style="width: 100px;" src="Images2/paw_logo.png" alt="Logo chat">
+                            </div>
+    
+                            <div class="col-6 mb-4">
+                                <label for="nameB">Nom :</label>
+                                <input type="name" class="form-control" id="nameB" placeholder="Nom" required>
+                            </div>
+    
+                            <div class="col-6">
+                                <label for="firstnameB">Prénom :</label>
+                                <input type="text" class="form-control" id="firstnameB" placeholder="Prénom" required>
+                            </div>
+    
+                            <div class="col-6 mb-4">
+                                <label for="date">Date de naissance :</label>
+                                <input type="date" class="form-control" id="date" required>
+                            </div>
+    
+                            <div class="col-6">
+                                <label for="mailB">Email :</label>
+                                <input type="email" class="form-control" id="mailB" placeholder="exemple@gmail.com" required>
+                            </div>
+    
+                            <div class="col-6 mb-4">
+                                <label for="telB">Téléphone :</label>
+                                <input type="tel" class="form-control" id="telB" placeholder="+33-" required>
+                            </div>
+    
+                            <div class="col-6"> Préférences de communication* :<br>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input form-check-inline" type="checkbox" id="prefMail" checked>
+                                    <label class="form-check-label form-check-inline" for="prefMail">Email</label>
+                                    <input class="form-check-input form-check-inline" type="checkbox" id="prefTel">
+                                    <label class="form-check-label form-check-inline" for="prefTel">Téléhone</label>
+                                </div>
+                            </div>
+                  
+                            <div class="d-flex justify-content-center align-self-center mb-3">
+                                <button type="submit" class="btn btn-primary">Envoyer</button>
+                            </div>
+                        </form>
+                    <div class="col pb-5 order-sm-1 order-md-2"> 
+                            <h3 class="text-center fst-italic pb-3">Rejoignez-nous !</h3>
+                                <p>Notre refuge fonctionne exclusivement sur le principe du bénévolat, ressource essentielle pour mener à bien notre mission. Vous souhaitez vous investir à nos côtés et avez une passion particulière pour les chats ?<br><br>
 
                                 Nous recherchons principalement des bénévoles majeurs qui soient disponibles au minimum 2 demi-journées par mois, assureront l’entretien du refuge en rejoignant une équipe et seront formés par nos référents. <br>
                                 Votre aide et votre engagement seront précieux et permettront à certains chats de reprendre confiance en l’homme et de se sentir aimés par les attentions que vous leur porterez. D’autres missions pourront aussi vous être confiées si vous avez des compétences en rapport avec notre structure et souhaitez par la suite nous aider dans différentes tâches. N’hésitez pas à nous en faire part. <br><br>
                 
                                 <strong>Ensemble, nous sommes plus forts pour faire avancer la cause animale et dans tous les cas ils vous en seront reconnaissants !</strong> <br></p>
                 
-                                <p class="card-text fst-italic"><small class="text-body-secondary">*A la réception de votre formulaire d’adhésion, un de nos bénévole vous recontactera en fonction de vos préférences de communication pour convenir à l’avance de votre planning pour le mois à venir, ainsi que les tâches qui vous seront confiées</small></p>
-                        </div>
+                                <p class="fst-italic"><small class="text-body-secondary">*A la réception de votre formulaire d’adhésion, un de nos bénévole vous recontactera en fonction de vos préférences de communication pour convenir à l’avance de votre planning pour le mois à venir, ainsi que les tâches qui vous seront confiées</small></p>
                     </div>
 
-
-                         <!-- CRÉATION DU FORMULAIRE POUR DEVENIR BÉNÉVOLE -->
-                    <form class="row mx-auto pt-3 border">
-                        <div class="col-12 d-flex justify-content-center">
-                            <img class="img" style="width: 100px;" src="Images2/paw_logo.png" alt="Logo chat">
-                        </div>
-
-                        <div class="col-6 mb-4">
-                            <label for="nameB">Nom :</label>
-                            <input type="name" class="form-control" id="nameB" placeholder="Nom" required>
-                        </div>
-
-                        <div class="col-6">
-                            <label for="firstnameB">Prénom :</label>
-                            <input type="text" class="form-control" id="firstnameB" placeholder="Prénom" required>
-                        </div>
-
-                        <div class="col-6 mb-4">
-                            <label for="date">Date de naissance :</label>
-                            <input type="date" class="form-control" id="date" required>
-                        </div>
-
-                        <div class="col-6">
-                            <label for="mailB">Email :</label>
-                            <input type="email" class="form-control" id="mailB" placeholder="exemple@gmail.com" required>
-                        </div>
-
-                        <div class="col-6 mb-4">
-                            <label for="telB">Téléphone :</label>
-                            <input type="tel" class="form-control" id="telB" placeholder="+33-" required>
-                        </div>
-
-                        <div class="col-6"> Préférences de communication* :<br>
-                            <div class="form-check-inline">
-                                <input class="form-check-input form-check-inline" type="checkbox" id="prefMail" checked>
-                                <label class="form-check-label form-check-inline" for="prefMail">Email</label>
-                                <input class="form-check-input form-check-inline" type="checkbox" id="prefTel">
-                                <label class="form-check-label form-check-inline" for="prefTel">Téléhone</label>
-                            </div>
-                        </div>
-              
-                        <div class="d-flex justify-content-center align-self-center mb-3">
-                            <button type="submit" class="btn btn-primary">Envoyer</button>
-                        </div>
-                    </form>
                 </div>
         </div>
     </main>
 
-    <aside>
-        <hr>
+    <aside class="bg-warning">
                                         <!-- INSCRIPTION NEWSLETTER -->
-
-        <div class="container mt-4">
+        <div class="container pt-3">
             <div class="row justify-content-between align-items-center">
-                <div class="col-lg-5 mb-3">
-                    <div class="border text-center">
+                <div class="col-lg-5">
+                    <div class="text-center text-dark">
                         <h5>Et si on gardait contact ?</h5>
                             <label for="newsletter" class="form-label-sm">Inscription à notre newsletter :</label>
                             <input type="email" class="form-control form-control-sm" id="newsletter" placeholder="Votre adresse mail">
@@ -178,8 +171,8 @@
                 </div>
                                 
                                       <!-- RÉSEAUX SOCIAUX -->
-                <div class="col col-lg-3">
-                    <div class="border text-center">
+                <div class="col col-lg-3 mb-2">
+                    <div class="text-center text-dark">
                         <p class="lead">Nous suivre sur les réseaux :</p>
                                         <!-- INSTAGRAM -->
                             <a href="#" target="_blank"><img class="img" style="width: 30px;" src="Images2/insta_logo.png" alt="Logo Instagram"></a>
@@ -195,11 +188,10 @@
         </div>
     </aside>
 
-    
     <!-- FOOTER -->
-    <footer class="border">
-        <div class="container border d-flex justify-content-center p-4">
-            <small class="text-body-secondary text-center"><strong><a href="#logoAccueil">Haut de page</a></strong><br>
+    <footer class="bg-dark">
+        <div class="container d-flex justify-content-center p-4">
+            <small class="text-center text-primary"><strong><a href="#logoAccueil">Haut de page</a></strong><br>
             Crédit du contenu : <a href="https://www.refuge-asclaf.fr/" target="_blank" class="link-underline link-underline-opacity-0 link-underline-oopacity-75-hower">ASCLAF</a> | Tous droits réservés © | 2024</small>
         </div>
     </footer>

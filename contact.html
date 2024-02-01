@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="assets/bootstrap.min.css">
 </head>
 
-<body>
+<body class="bg-light">
 
-    <header class="px-3 border">
-        <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand" href="accueil.html">Accueil</a>
+    <header class="px-3">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand btn btn-primary btn-sm" href="accueil.html" type="button">Accueil</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span></button>
                         <div class="collapse navbar-collapse" id="menu">
@@ -43,17 +43,17 @@
     <main>
 
                                         <!-- LOGO -->
-        <div class="container border d-flex justify-content-center mb-4">
-            <img class="img" style="width: 180px;" src="Images2/logo.png" alt="Logo PurrPatrol" id="logoContact">
+        <div class="container d-flex justify-content-center">
+            <img class="img p-4" style="width: 180px;" src="Images2/logo.png" alt="Logo PurrPatrol" id="logoContact">
         </div>
 
-        <div class="container border mx-auto d-flex flex-wrap flex-column justify-content-center align-items-center">
+        <div class="container mx-auto d-flex flex-wrap flex-column justify-content-center align-items-center">
             <img class="img" style="width: 70px;" src="Images2/logo_message.png" alt="Logo dons">
             <h2 class="pb-3">Une question ?</h2>
             <p class="lead lh-1">Pour toute demande de renseignements, n'hésitez pas à remplir notre formulaire de contact* !</p> 
             <small class="fst-italic fw-lighter align-self-end text-body-secondary">*Nos bénévoles s'engagent à vous répondre sous 48h ouvrées</small>
 
-            <form class="border p-3">
+            <form class="p-3">
                 <div class="row gap-4">
                     <div class="col-lg-3">
                       <input type="text" class="form-control" placeholder="Nom*" aria-label="Nom de famille"  required>
@@ -68,13 +68,13 @@
                         <input type="text" class="form-control" placeholder="Téléphone" aria-label="Téléphone">
                       </div>
                       <div class="col-lg-5 form-floating">
-                        <select class="form-select" aria-label="Sélectionner une option*" id="objet" required>
+                        <select class="form-select" aria-label="Options" id="objet" required>
                             <option selected>- Objet du message -</option>
                             <option value="1">Demande de renseignements</option>
                             <option value="2">Prise de rendez-vous pour adoption</option>
                             <option value="3">Autre demande</option>
                           </select>
-                          <label for="objet">Sélectionner une option dans la liste*</label>
+                          <label for="objet">Options*</label>
                       </div>
                       <div class="col-lg-12">
                         <textarea name="message" id="message" cols="30" rows="10" type="text" class="form-control" placeholder="Votre message*" aria-label="Adresse mail" required></textarea>
@@ -89,14 +89,13 @@
     </main>
 
 
-    <aside>
-        <hr>
+    <aside class="bg-warning">
                                         <!-- INSCRIPTION NEWSLETTER -->
 
-        <div class="container mt-4">
+        <div class="container pt-3">
             <div class="row justify-content-between align-items-center">
-                <div class="col-lg-5 mb-3">
-                    <div class="border text-center">
+                <div class="col-lg-5">
+                    <div class="text-center text-dark">
                         <h5>Et si on gardait contact ?</h5>
                             <label for="newsletter" class="form-label-sm">Inscription à notre newsletter :</label>
                             <input type="email" class="form-control form-control-sm" id="newsletter" placeholder="Votre adresse mail">
@@ -105,8 +104,8 @@
                 </div>
                                 
                                       <!-- RÉSEAUX SOCIAUX -->
-                <div class="col col-lg-3">
-                    <div class="border text-center">
+                <div class="col col-lg-3 mb-2">
+                    <div class="text-center text-dark">
                         <p class="lead">Nous suivre sur les réseaux :</p>
                                         <!-- INSTAGRAM -->
                             <a href="#" target="_blank"><img class="img" style="width: 30px;" src="Images2/insta_logo.png" alt="Logo Instagram"></a>
@@ -122,11 +121,10 @@
         </div>
     </aside>
 
-
     <!-- FOOTER -->
-    <footer class="border">
-        <div class="container border d-flex justify-content-center p-4">
-            <small class="text-body-secondary text-center"><strong><a href="#logoAccueil">Haut de page</a></strong><br>
+    <footer class="bg-dark">
+        <div class="container d-flex justify-content-center p-4">
+            <small class="text-center text-primary"><strong><a href="#logoAccueil">Haut de page</a></strong><br>
             Crédit du contenu : <a href="https://www.refuge-asclaf.fr/" target="_blank" class="link-underline link-underline-opacity-0 link-underline-oopacity-75-hower">ASCLAF</a> | Tous droits réservés © | 2024</small>
         </div>
     </footer>

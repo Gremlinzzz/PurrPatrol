@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="assets/bootstrap.min.css">
 </head>
 
-<body>
+<body class="bg-light">
 
-    <header class="px-3 border">
-        <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand" href="accueil.html">Accueil</a>
+    <header class="px-3">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand btn btn-primary btn-sm" href="accueil.html" type="button">Accueil</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span></button>
                         <div class="collapse navbar-collapse" id="menu">
@@ -41,11 +41,11 @@
 
     <main>
                                 <!-- LOGO -->
-<div class="container border d-flex justify-content-center mb-4">
-<img class="img" style="width: 180px;" src="Images2/logo.png" alt="Logo PurrPatrol" id="logoModalites">
+<div class="container d-flex justify-content-center">
+<img class="img p-4" style="width: 180px;" src="Images2/logo.png" alt="Logo PurrPatrol" id="logoModalites">
 </div>
 
-<div class="container border p-3">
+<div class="container">
     <div class="row mx-auto d-flex flex-wrap justify-content-center align-items-center">
         <img class="img" style="width: 150px;" src="Images2/logo_warning.png" alt="Logo dons">
     <h1 class="text-center pb-4">À lire avant l'adoption</h1>
@@ -65,15 +65,15 @@
 </div>
 <div class="col-lg-4">
     <p>Depuis 2012, l’identification est rendue obligatoire en France pour tous les chats. Grâce au tatouage ou identification électronique, votre compagnon pourra être facilement retrouvé en cas de perte.</p>
-    <p class="text fw-bold">Si vous changez de domicile, n'oubliez pas de communiquer votre changement d'adresse à l'aide du volet de la carte de tatouage prévu à cet effet.</p>
+    <p class="text-light fw-lighter bg-danger p-3 rounded">Si vous changez de domicile, n'oubliez pas de communiquer votre changement d'adresse à l'aide du volet de la carte de tatouage prévu à cet effet.</p>
 </div>
 <hr>
 <div class="col">
-    <figure>
+    <figure class="bg-primary rounded p-4 text-light m-3">
         <blockquote class="blockquote">
           <p class="fst-italic fw-lighter">"Les chiens et chats, préalablement à leur cession, à titre gratuit ou onéreux, sont identifiés par un procédé agréé par le ministre chargé de l'agriculture mis en œuvre par les personnes qu'il habilite à cet effet. Il en est de même, en dehors de toute cession, pour les chiens nés après le 6 janvier 1999 âgés de plus de quatre mois et pour les chats de plus de sept mois nés après le 1er janvier 2012. L'identification est à la charge du cédant."</p>
         </blockquote>
-        <figcaption class="blockquote-footer">
+        <figcaption class="blockquote-footer fw-bold">
              Art. L212-10 du <cite title="Source Title">Code rural et de la pêche maritime</cite>
         </figcaption>
       </figure>
@@ -82,7 +82,9 @@
     </div>
 </div>
 
-<div class="container border p-3 mt-2">
+
+<div class="container pb-5 mt-2">
+    <hr>
     <div class="row mx-auto d-flex flex-wrap justify-content-center align-items-center">
     <h2 class="text-center p-2">Contrat d'adoption</h2>
     <div class="collg-12">
@@ -99,21 +101,21 @@
         <li>Ainsi qu’une adhésion de 25€ à notre association</li>
     </ul>
 </div>
-<div class="col-lg-5">
-    <p class="fw-lighter">Elle s'établit, avec l’adhésion comprise, de 190€ (chat de plus de 1 an) à 210€ (chaton et junior). Si l'animal n'est pas encore stérilisé lors de l'adoption, en raison de son jeune âge, un chèque de caution de 200€ sera demandé. N'oubliez pas de vous munir d'une cage de transport pour chat, et de bien préparer son arrivée chez vous.</p>
+<div class="col-lg-5 bg-danger rounded mx-auto pt-3">
+    <p class="fw-lighter text-light text-center">Elle s'établit, avec l’adhésion comprise, de 190€ (chat de plus de 1 an) à 210€ (chaton et junior). Si l'animal n'est pas encore stérilisé lors de l'adoption, en raison de son jeune âge, un chèque de caution de 200€ sera demandé. N'oubliez pas de vous munir d'une cage de transport pour chat, et de bien préparer son arrivée chez vous.</p>
 </div>
 </div>
 </div>
 
     </main>
 
-    <aside>
-        <hr>
+    <aside class="bg-warning">
                                         <!-- INSCRIPTION NEWSLETTER -->
-        <div class="container mt-4">
+
+        <div class="container pt-3">
             <div class="row justify-content-between align-items-center">
-                <div class="col-lg-5 mb-3">
-                    <div class="border text-center">
+                <div class="col-lg-5">
+                    <div class="text-center text-dark">
                         <h5>Et si on gardait contact ?</h5>
                             <label for="newsletter" class="form-label-sm">Inscription à notre newsletter :</label>
                             <input type="email" class="form-control form-control-sm" id="newsletter" placeholder="Votre adresse mail">
@@ -122,8 +124,8 @@
                 </div>
                                 
                                       <!-- RÉSEAUX SOCIAUX -->
-                <div class="col col-lg-3">
-                    <div class="border text-center">
+                <div class="col col-lg-3 mb-2">
+                    <div class="text-center text-dark">
                         <p class="lead">Nous suivre sur les réseaux :</p>
                                         <!-- INSTAGRAM -->
                             <a href="#" target="_blank"><img class="img" style="width: 30px;" src="Images2/insta_logo.png" alt="Logo Instagram"></a>
@@ -140,9 +142,9 @@
     </aside>
 
     <!-- FOOTER -->
-    <footer class="border">
-        <div class="container border d-flex justify-content-center p-4">
-            <small class="text-body-secondary text-center"><strong><a href="#logoAccueil">Haut de page</a></strong><br>
+    <footer class="bg-dark">
+        <div class="container d-flex justify-content-center p-4">
+            <small class="text-center text-primary"><strong><a href="#logoAccueil">Haut de page</a></strong><br>
             Crédit du contenu : <a href="https://www.refuge-asclaf.fr/" target="_blank" class="link-underline link-underline-opacity-0 link-underline-oopacity-75-hower">ASCLAF</a> | Tous droits réservés © | 2024</small>
         </div>
     </footer>

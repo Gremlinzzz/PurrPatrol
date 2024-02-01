@@ -8,161 +8,148 @@
     <link rel="stylesheet" href="assets/bootstrap.min.css">
 </head>
 
-<body>
+<body class="bg-light">
 
-    <!-- DÉFINITION D'UN MENU DE NAVIGATION RESPONSIVE AVEC MENU BURGER -->
-    <header class="px-3 border">
-        <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand" href="accueil.html">Accueil</a>
+                <!-- DÉFINITION D'UN MENU DE NAVIGATION RESPONSIVE AVEC MENU BURGER -->
+    <header class="px-3">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand text-dark btn btn-primary btn-sm" href="accueil.html" type="button">Accueil</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span></button>
                         <div class="collapse navbar-collapse" id="menu">
 
                             <ul class="navbar-nav">
-                                <li><a href="nos_chats.html" class="nav-link">Adoptez-les</a></li>
+                                <li><a href="nos_chats.html" class="nav-link text-dark">Adoptez-les</a></li>
 
-                                <li><a href="modalites.html" class="nav-link">Modalités d'adoption</a></li>
-
-                                <!-- CRÉATION D'UN SOUS-MENU -->
+                                <li><a href="modalites.html" class="nav-link text-dark">Modalités d'adoption</a></li>
+                                            <!-- CRÉATION D'UN SOUS-MENU -->
                                 <li class="nav-item dropdown">
-                                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Nous aider</button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="nous_aider.html">Adhérer à l'association</a></li>
-                                            <li><a class="dropdown-item" href="nous_aider.html">Devenir bénévole</a></li>
+                                    <button class="btn dropdown-toggle text-dark" data-bs-toggle="dropdown" aria-expanded="false">Nous aider</button>
+                                        <ul class="dropdown-menu bg-warning-light">
+                                            <li><a class="dropdown-item text-dark" href="nous_aider.html">Adhérer à l'association</a></li>
+                                            <li><a class="dropdown-item text-dark" href="nous_aider.html">Devenir bénévole</a></li>
                                         </ul>
                                 </li>
+                                <li><a href="evenements.html" class="nav-link text-dark">Évènements</a></li>
 
-                                <li><a href="evenements.html" class="nav-link">Évènements</a></li>
-
-                                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                                <li><a href="contact.html" class="nav-link text-dark">Contact</a></li>
                             </ul>
                         </div>
         </nav>
     </header> 
 
 
-
+                             <!-- UTILISATION DU SYSTÈME DE GRILLE BOOTSTRAP POUR LE CONTENU DE LA PAGE -->
     <main>
-        <!-- UTILISATION DU SYSTÈME DE GRILLE BOOTSTRAP POUR LE CONTENU DE LA PAGE -->
-        <div class="container d-flex flex-wrap justify-content-center align-items-center">
-            <img class="img pb-4" style="width: 180px;" src="Images2/logo.png" alt="Logo PurrPatrol" id="logoAccueil">
-            <div class="row border mx-auto">
+                                                        <!-- LOGO -->
+        <div class="container d-flex justify-content-center">
+            <img class="img p-4" style="width: 180px;" src="Images2/logo.png" alt="Logo PurrPatrol" id="logoHelp">
+        </div>
+
+        <div class="container bg-secondary rounded d-flex flex-wrap justify-content-center align-items-center p-5">
+            <div class="row mx-auto">
                 <div class="col-lg-7">
 
-                    <!-- CRÉATION D'UN CAROUSEL -->
-
-                                    <!-- INSERTION D'INDICATORS -->
+                    <!-- CRÉATION D'UN CAROUSEL AVEC INDICATORS -->
                     <div id="diaporama" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#diaporama" data-bs-slide-to="0" aria-current="true" class="active" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#diaporama" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#diaporama" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
-                        <div class="carousel-inner">
 
+                        <div class="carousel-inner">
                                         <!-- SLIDE 1 -->
                             <div class="carousel-item active" data-bs-interval="6000">
-                                <img src="Images2/chatonNoir.jpeg"  alt="Chaton noir" class="d-block w-100">
+                                <img src="Images2/chatonNoir.jpeg"  alt="Chaton noir" class="d-block w-100 rounded">
                                     <div class="carousel-caption bg-primary bg-opacity-10">
-                                        <h3 class="text fw-lighter">Ils ont besoin de vous</h3>
-                                            <button type="button" class="btn btn-sm bg-secondary" href="nous_aider.html">En savoir plus</button>
+                                        <p>Ils ont besoin de vous</p>
+                                            <a type="button" class="btn btn-sm bg-secondary" href="nous_aider.html">En savoir plus</a>
                                     </div>
                             </div>
-
                                         <!-- SLIDE 2 -->
                             <div class="carousel-item" data-bs-interval="6000">
-                                <img src="Images2/chaton1.jpeg"  alt="Chaton tigré" class="d-block w-100">
+                                <img src="Images2/chaton1.jpeg"  alt="Chaton tigré" class="d-block w-100 rounded">
                                     <div class="carousel-caption bg-primary bg-opacity-10">
                                         <p class="text fst-italic">PurrPatrol procure un nouveau foyer pour les animaux délaissés, abandonnés. En attendant qu’ils soient adoptés, nous les hébergeons dans notre refuge ou bien au sein de nos familles d’accueil. </p>
                                     </div>
                             </div>
-
                                         <!-- SLIDE 3 -->
                             <div class="carousel-item" data-bs-interval="6000">
-                                <img src="Images2/chatblanc.jpeg"  alt="Chat blanc" class="d-block w-100">
+                                <img src="Images2/chatblanc.jpeg"  alt="Chat blanc" class="d-block w-100 rounded">
                                     <div class="carousel-caption bg-primary bg-opacity-10">
-                                        <p class="text fw-bold">Chaque année en France, c'est 11 animaux domestiques qui sont abandonnés par heure...</p>
-                                            <button type="button" class="btn btn-sm bg-secondary" href="nous_aider.html/#histoire">Notre mission</button>
+                                        <p class="lead">Chaque année en France, c'est 11 animaux domestiques qui sont abandonnés par heure...</p>
+                                            <a type="button" class="btn btn-sm bg-secondary" href="modalites.html">Rejoignez notre combat</a>
                                     </div>
                             </div>
                         
                                         <!-- BOUTONS DE CONTRÔLE -->
-                                <button class="carousel-control-prev"  type="button"   data-bs-target="#diaporama"  data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span></button>
+                            <button class="carousel-control-prev"  type="button"   data-bs-target="#diaporama"  data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span></button>
 
-                                <button class="carousel-control-next"  type="button"   data-bs-target="#diaporama"   data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span></button>
+                            <button class="carousel-control-next"  type="button"   data-bs-target="#diaporama"   data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span></button>
                         </div>
                     </div>
                 </div>                 
 
                                     <!-- CARTE : NOTRE HISTOIRE -->
                 <div class="col">
-                    <div class="card">
-                        <div class="card-body">
-                            <h2 class="card-title text-center p-3" id="histoire">Notre histoire</h2>
-                                <p class="card-text">L'association PurrPatrol, reconnu d'intérêt général, a été créé par un groupe de bénévoles le 23 Septembre 2021. Il aide les chats sauvages ou abandonnés, errant dans les parcs, cimetières et jardins de Corbeil-Essonnes et des environs de l'Essonne, à vivre dans des conditions décentes et non dangereuses pour la population. Notre rayon d'action se situe principalement dans le secteur où se rejoignent le 91, le 77 et le 94. Grâce aux bons soins des bénévoles, les chats sont nourris, vaccinés, soignés et stérilisés afin d’éviter leur prolifération. Ils sont ensuite proposés à l'adoption. Dans le but de soulager la misère animale, PurrPatrol procure un nouveau foyer pour les animaux délaissés, abandonnés. En attendant qu’ils soient adoptés , nous les hébergeons dans notre refuge ou bien au sein de nos familles d’accueil. Parallèlement, l’association fait en sorte de multiplier les campagnes digitales afin d’aviser et de sensibiliser le plus grand nombre à la cause animale.</p>
-                        </div>
+                    <div class=" text-dark">
+                        <h2 class="text-center fw-bold p-3" id="histoire">Notre histoire</h2>
+                             <p class="fw-light text-center">L'association <strong class="fw-bold">PurrPatrol</strong>, reconnu d'intérêt général, a été créé par un groupe de bénévoles le 23 Septembre 2021.<br> Il aide les chats sauvages ou abandonnés, errant dans les parcs, cimetières et jardins de Corbeil-Essonnes et des environs de l'Essonne, à vivre dans des conditions décentes et non dangereuses pour la population. Notre rayon d'action se situe principalement dans le secteur où se rejoignent le 91, le 77 et le 94. <br><br> Grâce aux bons soins des bénévoles, les chats sont nourris, vaccinés, soignés et stérilisés afin d’éviter leur prolifération. Ils sont ensuite proposés à l'adoption. Dans le but de soulager la misère animale, PurrPatrol procure un nouveau foyer pour les animaux délaissés, abandonnés. En attendant qu’ils soient adoptés , nous les hébergeons dans notre refuge ou bien au sein de nos familles d’accueil. Parallèlement, l’association fait en sorte de multiplier les campagnes digitales afin d’aviser et de sensibiliser le plus grand 
                     </div>
                 </div>
             </div>
         </div>
 
-
                                     <!-- CARTE : NOS PARTENAIRES -->
-        <div class="container border">
-            <div class="row mx-auto">
-                    <h2 class="text-center pt-3 mt-3" id="partenaires">Nos partenaires</h2>
-                    <div class="col-lg-12 d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row mx-auto pb-3">
+                <h4 class="text-center pt-3 mt-3" id="partenaires">Nos partenaires</h4>
+                    <div class="col-lg-12 d-flex justify-content-evenly align-items-center">
                         <img class="img" style="width: 80px;" src="Images2/logo_partenaires.png" alt="Logo partenaires">
                     </div>
-                    <div class="col-lg-4 card d-flex justify-content-center align-items-center p-2">
-                        <img src="Images2/clinique.png" alt="Logo Clinique St Leonard" class="card-img img-fluid w-50 m-2">
-                            <div class="card-body">
-                                <h6 class="card-title text-center">Clinique Vétérinaire Saint Léonard</h6>
-                                    <p class="card-text"><small class="text-body-secondary">Située au 1 Place St-Léonard à Corbeil-Essonnes, c'est grâce à leur fabuleux médecins vétérinaires bénévoles que nous sommes en mesure de soigner, faire vacciner et stériliser nos pensionnaires au sein de cet établissement.</small></p>
-                            </div>
+                                            <!-- PARTENAIRE 1 -->
+                    <div class="col-lg-4 d-flex flex-wrap justify-content-center align-items-center bg-light text-dark">
+                        <img class="img m-2" style="width: 60px;" src="Images2/logo_clinique.png" alt="Logo clinique">
+                            <h6 class="text-center">Clinique Vétérinaire Saint Léonard</h6>
+                                <p><small class="text-body-secondary">Située au 1 Place St-Léonard à Corbeil-Essonnes, c'est grâce à leur fabuleux médecins vétérinaires bénévoles que nous sommes en mesure de soigner, faire vacciner et stériliser nos pensionnaires au sein de cet établissement.</small></p>
                     </div>
-
-                    <div class="col-lg-4 card d-flex justify-content-center align-items-center p-2">
-                        <img src="Images2/30mill.png" alt="Logo 30 millions d'amis" class="card-img img-fluid w-25 m-2">
-                            <div class="card-body">
-                                <h6 class="card-title text-center">Fondation 30 millions d'amis</h6>
-                                    <p class="card-text"><small class="text-body-secondary">Cette fondation d’utilité publique qu’on ne présente plus désormais, aide à faciliter le contact entre l’association PurrPatrol et certaines familles de la région souhaitant adopter.</small></p>
-                            </div>
+                                            <!-- PARTENAIRE 2 -->
+                    <div class="col-lg-4 d-flex flex-wrap justify-content-center align-items-center bg-light text-dark">
+                        <img class="img m-2" style="width: 70px;" src="Images2/30mill.png" alt="Logo 30millions d'amis">
+                            <h6 class="text-center">Fondation 30 millions d'amis</h6>
+                                <p><small class="text-body-secondary">Cette fondation d’utilité publique qu’on ne présente plus désormais, aide à faciliter le contact entre l’association PurrPatrol et certaines familles de la région souhaitant adopter.</small></p>
                     </div>
-
-                    <div class="col-lg-4 card d-flex justify-content-center align-items-center p-2">
-                        <img src="Images2/villeCorbeil.png" alt="Logo Corbeil Essonnes" class="card-img img-fluid w-25 m-2">
-                            <div class="card-body">
-                                <h6 class="card-title text-center">Ville de Corbeil-Essonnes</h6>
-                                    <p class="card-text"><small class="text-body-secondary">C’est principalement grâce aux aides que nous verse la Ville de Corbeil-Essonnes, que nous disposons des ressources nécessaires pour acheter la nourriture de nos matous.</small></p>
-                            </div>
+                                            <!-- PARTENAIRE 3 -->
+                    <div class="col-lg-4 d-flex flex-wrap align-items-center bg-light text-dark">
+                        <img class="img m-2" style="width: 80px;" src="Images2/villeCorbeil.png" alt="Logo ville de Corbeil">
+                            <h6 class="text-center">Ville de Corbeil-Essonnes</h6>
+                                <p><small class="text-body-secondary">C’est principalement grâce aux aides que nous verse la Ville de Corbeil-Essonnes, que nous disposons des ressources nécessaires pour acheter la nourriture de nos matous.</small></p>
                     </div>
             </div>
         </div> 
     </main>
 
-    <aside>
-        <hr>
+                                            <!-- SECTION ASIDE -->
+    <aside class="bg-warning">
                                         <!-- INSCRIPTION NEWSLETTER -->
-
-        <div class="container mt-4">
+        <div class="container pt-3">
             <div class="row justify-content-between align-items-center">
-                <div class="col-lg-5 mb-3">
-                    <div class="border text-center">
+                <div class="col-lg-5">
+                    <div class="text-center text-dark">
                         <h5>Et si on gardait contact ?</h5>
                             <label for="newsletter" class="form-label-sm">Inscription à notre newsletter :</label>
                             <input type="email" class="form-control form-control-sm" id="newsletter" placeholder="Votre adresse mail">
                                 <button type="submit" class="btn btn-primary btn-sm m-2">Inscription</button>
                     </div>
-                </div>
-                                
-                                      <!-- RÉSEAUX SOCIAUX -->
-                <div class="col col-lg-3">
-                    <div class="border text-center">
+                </div>             
+                                        <!-- RÉSEAUX SOCIAUX -->
+                <div class="col col-lg-3 mb-2">
+                    <div class="text-center text-dark">
                         <p class="lead">Nous suivre sur les réseaux :</p>
                                         <!-- INSTAGRAM -->
                             <a href="#" target="_blank"><img class="img" style="width: 30px;" src="Images2/insta_logo.png" alt="Logo Instagram"></a>
@@ -178,15 +165,14 @@
         </div>
     </aside>
 
-    <!-- FOOTER -->
-    <footer class="border">
-        <div class="container border d-flex justify-content-center p-4">
-            <small class="text-body-secondary text-center"><strong><a href="#logoAccueil">Haut de page</a></strong><br>
+                                            <!-- FOOTER -->
+    <footer class="bg-dark">
+        <div class="container d-flex justify-content-center p-4">
+            <small class="text-center text-primary"><strong><a href="#logoAccueil">Haut de page</a></strong><br>
             Crédit du contenu : <a href="https://www.refuge-asclaf.fr/" target="_blank" class="link-underline link-underline-opacity-0 link-underline-oopacity-75-hower">ASCLAF</a> | Tous droits réservés © | 2024</small>
         </div>
     </footer>
 
-   <!--  <script src="script.js"></script> -->
     <script src="assets/bootstrap.bundle.min.js"></script> 
 </body>
 </html>
