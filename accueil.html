@@ -42,8 +42,8 @@
 
     <main>
         <!-- UTILISATION DU SYSTÈME DE GRILLE BOOTSTRAP POUR LE CONTENU DE LA PAGE -->
-        <div class="container my-2 mx-auto d-flex flex-wrap justify-content-center align-items-center">
-            <img class="img pb-4" style="width: 180px;" src="Images2/logo.png" alt="Logo PurrPatrol">
+        <div class="container d-flex flex-wrap justify-content-center align-items-center">
+            <img class="img pb-4" style="width: 180px;" src="Images2/logo.png" alt="Logo PurrPatrol" id="logoAccueil">
             <div class="row border mx-auto">
                 <div class="col-lg-7">
 
@@ -112,8 +112,10 @@
                                     <!-- CARTE : NOS PARTENAIRES -->
         <div class="container border">
             <div class="row mx-auto">
-                    <h4 class="text-center p-3" id="partenaires">Nos partenaires</h4>
-
+                    <h2 class="text-center pt-3 mt-3" id="partenaires">Nos partenaires</h2>
+                    <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                        <img class="img" style="width: 80px;" src="Images2/logo_partenaires.png" alt="Logo partenaires">
+                    </div>
                     <div class="col-lg-4 card d-flex justify-content-center align-items-center p-2">
                         <img src="Images2/clinique.png" alt="Logo Clinique St Leonard" class="card-img img-fluid w-50 m-2">
                             <div class="card-body">
@@ -141,11 +143,44 @@
         </div> 
     </main>
 
+    <aside>
+        <hr>
+                                        <!-- INSCRIPTION NEWSLETTER -->
 
-                                        <!-- FOOTER -->
+        <div class="container mt-4">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-5 mb-3">
+                    <div class="border text-center">
+                        <h5>Et si on gardait contact ?</h5>
+                            <label for="newsletter" class="form-label-sm">Inscription à notre newsletter :</label>
+                            <input type="email" class="form-control form-control-sm" id="newsletter" placeholder="Votre adresse mail">
+                                <button type="submit" class="btn btn-primary btn-sm m-2">Inscription</button>
+                    </div>
+                </div>
+                                
+                                      <!-- RÉSEAUX SOCIAUX -->
+                <div class="col col-lg-3">
+                    <div class="border text-center">
+                        <p class="lead">Nous suivre sur les réseaux :</p>
+                                        <!-- INSTAGRAM -->
+                            <a href="#" target="_blank"><img class="img" style="width: 30px;" src="Images2/insta_logo.png" alt="Logo Instagram"></a>
+                                        <!-- FACEBOOK -->
+                            <a href="#" target="_blank"><img class="img" style="width: 30px;" src="Images2/facebook_logo.png" alt="Logo Facebook"></a>
+                                        <!-- TWITTER -->
+                            <a href="#" target="_blank"><img class="img" style="width: 30px;" src="Images2/twitter_icon2.png" alt="Logo Twitter"></a>
+                                        <!-- TIKTOK -->
+                            <a href="#" target="_blank"><img class="img" style="width: 30px;" src="Images2/tiktok_logo.png" alt="Logo Tiktok"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- FOOTER -->
     <footer class="border">
-        <div class="container border d-flex justify-content-center">
-            <p class="text"><small class="text-body-secondary">Tous droits réservés © | 2024 </small></p>
+        <div class="container border d-flex justify-content-center p-4">
+            <small class="text-body-secondary text-center"><strong><a href="#logoAccueil">Haut de page</a></strong><br>
+            Tous droits réservés © | 2024</small>
         </div>
     </footer>
 

@@ -35,13 +35,18 @@
         </nav>
     </header>
 
-    <main class="m-3">
+    <main>
+                                                <!-- LOGO -->
+        <div class="container border d-flex justify-content-center mb-4">
+            <img class="img" style="width: 180px;" src="Images2/logo.png" alt="Logo PurrPatrol" id="logoHelp">
+        </div>
+
         <div class="container border mx-auto d-flex flex-wrap justify-content-center align-items-center">
-            <img class="card-img-top" style="width: 60px;" src="Images2/paw_fund.png" alt="Logo dons"  id="adhesion">
-                <div class="row row-cols-lg-2 m-3">
+            <img class="card-img-top" style="width: 105px;" src="Images2/logo_adhesion.png" alt="Logo dons"  id="adhesion">
+                <div class="row row-cols-lg-2">
                     <div class="card col"> 
                         <div class="card-body">
-                            <h5 class="card-title text-center">Pourquoi adhérer ?</h5>
+                            <h3 class="card-title text-center pb-3">Pourquoi adhérer ?</h3>
                                 <p class="card-text">C'est également grâce aux cotisations de nos membres que l'on peut mener à bien notre action. En adhérant, vous nous permettez d'avoir plus de poids pour mener notre combat. L’adhésion à notre association est de 25€. Celle-ci est valable un an et vous donne le droit de participer à l’Assemblée Générale annuelle où vous pouvez décider sur les projets de notre refuge et sur nos objectifs pour l’avenir. Vous pouvez ainsi vous engager pour la cause féline et aider à promouvoir l'importance de la protection animale. Faire découvrir notre refuge et nos activités accroît considérablement les possibilités d’action à nos côtés. Nous vous remercions d’avance de partager notre site avec vos amis !</p>
                         </div>
                     </div>
@@ -65,12 +70,12 @@
 
                         <div class="col-3">
                             <label for="city">Ville :</label>
-                            <input type="text" class="form-control" id="city" required>
+                            <input type="text" class="form-control" id="city" placeholder="Ville" required>
                         </div>
 
                         <div class="col-3">
                             <label for="zip">Code postal :</label>
-                            <input type="text" class="form-control" id="zip" required>
+                            <input type="text" class="form-control" id="zip" placeholder="ex: 75001" required>
                         </div>
 
                         <div> Méthode de paiement :<br>
@@ -89,13 +94,13 @@
                 </div>
         </div>
 
-        <div class="container border mt-5 mx-auto d-flex flex-wrap justify-content-center align-items-center">
-            <img class="card-img-top" style="width: 70px;" src="Images2/heart_hands.png" alt="Logo coeur main" id="benevolat">
+        <div class="container border mt-4 mx-auto d-flex flex-wrap justify-content-center align-items-center">
+            <img class="card-img-top" style="width: 90px;" src="Images2/logo_join.png" alt="Logo coeur main" id="benevolat">
                 <div class="row row-cols">
-                    <div class="card col my-3"> 
+                    <div class="card col"> 
                         <div class="card-body">
-                            <h5 class="card-title text-center">Rejoignez-nous !</h5>
-                                <p class="card-text">Notre refuge fonctionne exclusivement sur le principe du bénévolat, ressource essentielle pour mener à bien notre mission.Vous souhaitez vous investir à nos côtés et avez une passion particulière pour les chats ?<br><br>
+                            <h3 class="card-title text-center">Rejoignez-nous !</h3>
+                                <p class="card-text">Notre refuge fonctionne exclusivement sur le principe du bénévolat, ressource essentielle pour mener à bien notre mission. Vous souhaitez vous investir à nos côtés et avez une passion particulière pour les chats ?<br><br>
 
                                 Nous recherchons principalement des bénévoles majeurs qui soient disponibles au minimum 2 demi-journées par mois, assureront l’entretien du refuge en rejoignant une équipe et seront formés par nos référents. <br>
                                 Votre aide et votre engagement seront précieux et permettront à certains chats de reprendre confiance en l’homme et de se sentir aimés par les attentions que vous leur porterez. D’autres missions pourront aussi vous être confiées si vous avez des compétences en rapport avec notre structure et souhaitez par la suite nous aider dans différentes tâches. N’hésitez pas à nous en faire part. <br><br>
@@ -109,8 +114,8 @@
 
                          <!-- CRÉATION DU FORMULAIRE POUR DEVENIR BÉNÉVOLE -->
                     <form class="row mx-auto pt-3 border">
-                        <div class="col-12 d-flex justify-content-center pb-4">
-                            <img class="img" style="width: 150px;" src="Images2/logo.png" alt="Logo chat">
+                        <div class="col-12 d-flex justify-content-center">
+                            <img class="img" style="width: 100px;" src="Images2/paw_logo.png" alt="Logo chat">
                         </div>
 
                         <div class="col-6 mb-4">
@@ -138,7 +143,7 @@
                             <input type="tel" class="form-control" id="telB" placeholder="+33-" required>
                         </div>
 
-                        <div> Préférences de communication* :<br>
+                        <div class="col-6"> Préférences de communication* :<br>
                             <div class="form-check-inline">
                                 <input class="form-check-input form-check-inline" type="checkbox" id="prefMail" checked>
                                 <label class="form-check-label form-check-inline" for="prefMail">Email</label>
@@ -155,11 +160,45 @@
         </div>
     </main>
 
+    <aside>
+        <hr>
+                                        <!-- INSCRIPTION NEWSLETTER -->
 
-                                        <!-- FOOTER -->
+        <div class="container mt-4">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-5 mb-3">
+                    <div class="border text-center">
+                        <h5>Et si on gardait contact ?</h5>
+                            <label for="newsletter" class="form-label-sm">Inscription à notre newsletter :</label>
+                            <input type="email" class="form-control form-control-sm" id="newsletter" placeholder="Votre adresse mail">
+                                <button type="submit" class="btn btn-primary btn-sm m-2">Inscription</button>
+                    </div>
+                </div>
+                                
+                                      <!-- RÉSEAUX SOCIAUX -->
+                <div class="col col-lg-3">
+                    <div class="border text-center">
+                        <p class="lead">Nous suivre sur les réseaux :</p>
+                                        <!-- INSTAGRAM -->
+                            <a href="#" target="_blank"><img class="img" style="width: 30px;" src="Images2/insta_logo.png" alt="Logo Instagram"></a>
+                                        <!-- FACEBOOK -->
+                            <a href="#" target="_blank"><img class="img" style="width: 30px;" src="Images2/facebook_logo.png" alt="Logo Facebook"></a>
+                                        <!-- TWITTER -->
+                            <a href="#" target="_blank"><img class="img" style="width: 30px;" src="Images2/twitter_icon2.png" alt="Logo Twitter"></a>
+                                        <!-- TIKTOK -->
+                            <a href="#" target="_blank"><img class="img" style="width: 30px;" src="Images2/tiktok_logo.png" alt="Logo Tiktok"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    
+    <!-- FOOTER -->
     <footer class="border">
-        <div class="container border d-flex justify-content-center">
-            <p class="text"><small class="text-body-secondary">Tous droits réservés © | 2024 </small></p>
+        <div class="container border d-flex justify-content-center p-4">
+            <small class="text-body-secondary text-center"><strong><a href="#logoHelp">Haut de page</a></strong><br>
+            Tous droits réservés © | 2024</small>
         </div>
     </footer>
 
