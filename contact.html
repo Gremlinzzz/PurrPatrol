@@ -3,12 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactez-nous</title>
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="assets/bootstrap.min.css">
 </head>
-<body>
- 
 
-    <script src="assets/bootstrap.min.js"></script>
+<body>
+
+    <header class="px-3 border">
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="accueil.html">Accueil</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="menu">
+
+                            <ul class="navbar-nav">
+                                <li><a href="nos_chats.html" class="nav-link">Adoptez-les</a></li>
+
+                                <!-- SOUS-MENU -->
+                                <li class="nav-item dropdown">
+                                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Nous aider</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="nous_aider.html">Adhérer à l'association</a></li>
+                                            <li><a class="dropdown-item" href="nous_aider.html">Devenir bénévole</a></li>
+                                        </ul>
+                                </li>
+
+                                <li><a href="evenements.html" class="nav-link">Évènements</a></li>
+
+                                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                            </ul>
+                        </div>
+        </nav>
+    </header> 
+
+    
+    <main>
+
+                                        <!-- LOGO -->
+        <div class="container border d-flex justify-content-center mb-4">
+            <img class="img" style="width: 180px;" src="Images2/logo.png" alt="Logo PurrPatrol">
+        </div>
+
+        <div class="container border m-2 mx-auto d-flex flex-wrap flex-column justify-content-center align-items-center">
+            <h2 class="p-3">Une question ?</h2>
+            <p class="lead lh-1">Pour toute demande de renseignements, n'hésitez pas à remplir notre formulaire de contact* !</p> 
+            <small class="fst-italic fw-lighter align-self-end text-body-secondary">*Nos bénévoles s'engagent à vous répondre sous 48h ouvrées</small>
+
+            <form class="border p-3">
+                <div class="row gap-4">
+                    <div class="col-lg-3">
+                      <input type="text" class="form-control" placeholder="Nom*" aria-label="Nom de famille"  required>
+                    </div>
+                    <div class="col-lg-3">
+                      <input type="text" class="form-control" placeholder="Prénom*" aria-label="Prénom" required>
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="email" class="form-control" placeholder="Email*" aria-label="Adresse mail" required>
+                      </div>
+                      <div class="col-lg-4">
+                        <input type="text" class="form-control" placeholder="Téléphone" aria-label="Téléphone">
+                      </div>
+                      <div class="col-lg-5 form-floating">
+                        <select class="form-select" aria-label="Sélectionner une option*" id="objet" required>
+                            <option selected>- Objet du message -</option>
+                            <option value="1">Demande de renseignements</option>
+                            <option value="2">Prise de rendez-vous pour adoption</option>
+                            <option value="3">Autre demande</option>
+                          </select>
+                          <label for="objet">Sélectionner une option dans la liste*</label>
+                      </div>
+                      <div class="col-lg-12">
+                        <textarea name="message" id="message" cols="30" rows="10" type="text" class="form-control" placeholder="Votre message*" aria-label="Adresse mail" required></textarea>
+                            <small class="text-body-secondary fst-italic">*Champ obligatoire</small>
+                      </div>
+                      <div class="d-flex justify-content-center align-self-center">
+                        <button class="btn btn-primary" type="submit">Envoyer</button>
+                      </div>
+                  </div>
+            </form>
+        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="border">
+        <div class="container border d-flex justify-content-center">
+            <p class="text"><small class="text-body-secondary">Tous droits réservés © | 2024 </small></p>
+        </div>
+    </footer>
+                                        
+    <!--  <script src="script.js"></script> -->
+    <script src="assets/bootstrap.bundle.min.js"></script> 
 </body>
 </html>
